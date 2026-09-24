@@ -21,21 +21,7 @@ public class Assignment5B {
                     break;
                 
                 default:
-                    System.out.println("t.nextInt();\r\n" + //
-                                                "            int menu = input.nextInt();\r\n" + //
-                                                "            i = input.nextInt();\r\n" + //
-                                                "\r\n" + //
-                                                "            switch (menu) {\r\n" + //
-                                                "                case 0: //add\r\n" + //
-                                                "                    System.out.print(num1 + num2);\r\n" + //
-                                                "                    break;\r\n" + //
-                                                "            \r\n" + //
-                                                "                case 1: //multiply\r\n" + //
-                                                "                    System.out.print(num1 * num2);\r\n" + //
-                                                "                    break;\r\n" + //
-                                                "                \r\n" + //
-                                                "                default:\r\n" + //
-                                                "                    System.out.prin");
+                    System.out.println("fuh nah");
                     break;
             }
         }
