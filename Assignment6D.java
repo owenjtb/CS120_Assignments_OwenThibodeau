@@ -6,8 +6,8 @@ public class Assignment6D { //putting code in a cauldron and making a potion of 
             int answer = 0;
             char[] digits = String.valueOf(i).toCharArray();
             //
-            for (int k = 1; k < digits.length; k++); {
-                answer += digits[k - 1];
+            for (int k = 0; k < digits.length; k++) {
+                answer += digits[k];
             }
             System.out.println(answer);
         }
