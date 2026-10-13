@@ -17,11 +17,14 @@ public class Assignment6G {
                 if (number % i == 0) { //
                     primecoin += 1;
                 } 
-                if (primecoin == 2) {
-                    prime = true;
-                }
+                
                 
             }
+            //THE IF CORNER OF DESPAIR
+            if (primecoin == 2) {
+                    prime = true;
+            }
+            
             if (prime == true){
                 System.out.println("number is prime"); //primemaxxing
             } else {
