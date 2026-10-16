@@ -10,9 +10,9 @@ public class Assignment7A {
         int[] avarray = new int[10];
         int length = 0;
         //filling the array
-        for (int i = 1; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             
-            System.out.printf("Input number %d\n", i);
+            System.out.printf("Input number %d\n", i + 1);
             avarray[i] = input.nextInt();
             
             if (avarray[i] == 0){
