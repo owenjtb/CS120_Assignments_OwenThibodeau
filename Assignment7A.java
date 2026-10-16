@@ -4,12 +4,11 @@ import java.util.stream.IntStream;
 public class Assignment7A { 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int gameing = 1;
-        // System.out.println("type 1 to continue 0 to stop");
-        // gameing = input.nextInt();
+        
+        
         
         int[] avarray = new int[10];
-        
+        int length = 0;
         //filling the array
         for (int i = 1; i < 10; i++) {
             
@@ -17,12 +16,15 @@ public class Assignment7A {
             avarray[i] = input.nextInt();
             
             if (avarray[i] == 0){
+                length = i;
                 break;
             }
             
         }
-        
-        System.out.print(IntStream.of(avarray).sum() / avarray.length);
+        //make a new array without all those pesky zeroes
+        int[] bestarray = Arrays.copyOf(avarray, length);
+
+        System.out.print((double) IntStream.of(bestarray).sum() / length);
         
         input.close();
     }
