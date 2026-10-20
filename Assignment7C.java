@@ -6,7 +6,9 @@ public class Assignment7C {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        int amount = 100;
+        System.out.print("Insert amount of rolls");
+        int amount = input.nextInt();
+
         int[] diceRolls = new int[amount]; 
         int[] probabilities = new int[11]; // from 2 - 12
 
@@ -23,7 +25,7 @@ public class Assignment7C {
         
         for (int probability : probabilities) {
             
-            System.out.printf("%d %d \n", probability, probability / 11.0 * 100); //plain probability
+            System.out.printf("%d %.0f%% \n", probability, (probability / (double) amount) * 100); //plain probability
             
         }
         input.close();
