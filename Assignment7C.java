@@ -24,9 +24,12 @@ public class Assignment7C {
         }
         
         for (int probability : probabilities) {
-            
-            System.out.printf("%d %.0f%% \n", probability, (probability / (double) amount) * 100); //plain probability
-            
+            //print how many times a number got rolled and the percentage of that number, along with the number itself
+            int index = IntStream.range(0, probabilities.length)
+                    .filter(i -> probabilities[i] == probability)
+                    .findFirst()
+                    .orElse(-1);
+            System.out.printf("\n %d: Count: %d Percentage: %.0f%% ", index + 2, probability, (probability / (double) amount) * 100); //plain probability
         }
         input.close();
     }
