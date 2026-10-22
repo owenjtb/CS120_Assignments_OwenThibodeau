@@ -12,18 +12,25 @@ public class Assignment8B {
                 {52, 57, 62, 53}, // student 3
             
         };
+        // row
         
         for (int[] row : twodarray) {
-            int sum = 0;
+            int rowsum = 0;
             for (int score : row) {
-                sum += score;
-                
+                rowsum += score;
             }
-            System.out.println(sum / row.length);
-            
-        }
+            System.out.println((double) rowsum / row.length);
 
+        }
         
+        // quest for the average of a column
+        for (int i = 0; i < twodarray[0].length; i++) {
+            int colsumn = 0;
+            for (int[] row : twodarray) {
+                colsumn += row[i];
+                }
+            System.out.println((double) colsumn / twodarray.length);
+        }
     }
 }
 
