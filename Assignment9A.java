@@ -3,12 +3,15 @@ import java.util.Scanner;
 public class Assignment9A {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int num1 = input.nextInt();
-        int num2 = input.nextInt();
-        
-        printResults(num1, num2);
-        
-        
+        while (true) {
+            int num1 = input.nextInt();
+            int num2 = input.nextInt();
+            printResults(num1, num2);
+            System.out.println("0 to continue 1 to break");
+            if (input.nextInt() == 1){
+                break;
+            }
+        }
     }
     
     public static int sum(int a, int b) {
@@ -23,6 +26,7 @@ public class Assignment9A {
     public static double quotient(int a, int b) {
         return (double) a / b;
     }
+
 
     public static void printResults(int a, int b) {
         System.out.printf("The sum of %d and %d is %d\n", a, b, sum(a, b));
