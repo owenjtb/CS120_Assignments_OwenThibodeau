@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class Assignment9A {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        
         while (true) {
             int num1 = input.nextInt();
             int num2 = input.nextInt();
             printResults(num1, num2);
-            System.out.println("0 to continue 1 to break");
-            if (input.nextInt() == 1){
+            System.out.println("1 to continue 0 to break");
+            if (input.nextInt() == 0){
                 break;
             }
         }
